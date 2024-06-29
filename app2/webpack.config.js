@@ -31,6 +31,7 @@ module.exports = {
       filename: 'remoteEntry.js',
       exposes: {
         './Footer': './src/Components/Footer',
+        './SubFooter': './src/Components/SubFooter',
       },
       shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
     }),

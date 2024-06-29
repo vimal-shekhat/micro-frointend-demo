@@ -3,6 +3,8 @@ const Navbar = React.lazy(() => import("app1/Navbar"));
 const CardList = React.lazy(() => import("app1/CardList"));
 const Footer = React.lazy(() => import("app2/Footer"));
 
+const SubFooter = React.lazy(() => import("app2/SubFooter"));
+
 const list = [
   {
     "id":1,
@@ -36,6 +38,7 @@ const App = () => {
       <Suspense fallback={"loading..."}>
         <Navbar organizationName="Media Unit" />
         <CardList list={list}/>
+        <SubFooter/>
         <Footer/>
       </Suspense>
     </div>)
